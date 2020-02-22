@@ -1,14 +1,14 @@
 {
-  "name": "nodecg-vue-ts-template",
+  "name": "mysrtafes-layouts",
   "version": "1.0.0",
-  "description": "Template for NodeCG bundles that use Vue.js and TypeScript.",
-  "homepage": "https://github.com/zoton2/nodecg-vue-ts-template#readme",
+  "description": "The on-stream layouts for Mystery Dungeon RTA FES",
+  "homepage": "https://oengus.io/marathon/mysrtafes",
   "bugs": {
-    "url": "https://github.com/zoton2/nodecg-vue-ts-template/issues"
+    "url": "https://github.com/yagamuu/mysrtafes-layouts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoton2/nodecg-vue-ts-template.git"
+    "url": "https://github.com/yagamuu/mysrtafes-layouts.git"
   },
   "license": "MIT",
   "author": "zoton2",
@@ -71,16 +71,17 @@
   },
   "nodecg": {
     "compatibleRange": "^1.5.0",
-    "dashboardPanels": [
-      {
-        "name": "example",
-        "title": "Example",
-        "file": "example.html"
-      }
-    ],
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.0.0"
+    },
     "graphics": [
       {
-        "file": "example.html",
+        "file": "16x9-1p-sample.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "4x3-1p-1c-sample.html",
         "width": 1920,
         "height": 1080
       }

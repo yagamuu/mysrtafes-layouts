@@ -2,34 +2,33 @@ import clone from 'clone';
 import { ReplicantBrowser } from 'nodecg/types/browser';
 import Vue from 'vue';
 import Vuex, { Store } from 'vuex';
+import { Timer, RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
 Vue.use(Vuex);
 
 // Replicants and their types
 const reps: {
-  replicantName: ReplicantBrowser<any>;
+  timer: ReplicantBrowser<any>;
+  runDataActiveRun: ReplicantBrowser<any>;
   [k: string]: ReplicantBrowser<unknown>;
 } = {
-  replicantName: nodecg.Replicant('replicantName'),
+  timer: nodecg.Replicant('timer', 'nodecg-speedcontrol'),
+  runDataActiveRun: nodecg.Replicant('runDataActiveRun', 'nodecg-speedcontrol'),
 };
 
 // Types for mutations below
 export type ExampleMutation = (arg: any) => void;
 
-const store = new Vuex.Store({
-  state: {},
+interface StoreTypes {
+  timer: Timer;
+  runDataActiveRun: RunDataActiveRun;
+}
+
+const store = new Vuex.Store<StoreTypes>({
   mutations: {
     setState(state, { name, val }): void {
       Vue.set(state, name, val);
     },
-    /* Mutations to replicants start */
-    exampleMutation(arg): void {
-      // You may need to do checks like these, depending on mutation content.
-      if (typeof reps.replicantName.value !== 'undefined') {
-        reps.replicantName.value = clone(arg);
-      }
-    },
-    /* Mutations to replicants end */
   },
 });
 
@@ -39,7 +38,7 @@ Object.keys(reps).forEach((key) => {
   });
 });
 
-export default async function (): Promise<Store<{}>> {
+export default async function (): Promise<Store<StoreTypes>> {
   return NodeCG.waitForReplicants(
     ...Object.keys(reps).map((key) => reps[key]),
   ).then(() => store);
