@@ -194,7 +194,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"../../node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  padding: 0;\\n  color: white;\\n  font-family: 'UD デジタル 教科書体 NK-B', 'メイリオ';\\n}\\n\\n.container {\\n  width: 1920px;\\n  height: 1080px;\\n  position: absolute;\\n\\toverflow: hidden;\\n}\\n\\n.flex {\\n  position: absolute;\\n  display: flex;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./_misc/common.css?D:/My_Documents/Web/mysrtafes/bundles/mysrtafes-layouts/node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"../../node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  padding: 0;\\n  color: white;\\n  font-family: 'UD デジタル 教科書体 NK-B', 'メイリオ';\\n  overflow: hidden;\\n}\\n\\n.container {\\n  width: 1920px;\\n  height: 1080px;\\n  position: absolute;\\n\\toverflow: hidden;\\n}\\n\\n.flex {\\n  position: absolute;\\n  display: flex;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./_misc/common.css?D:/My_Documents/Web/mysrtafes/bundles/mysrtafes-layouts/node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 

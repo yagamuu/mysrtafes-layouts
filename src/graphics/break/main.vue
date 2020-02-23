@@ -7,13 +7,6 @@
       <img src="../_misc/image/break-02.png">
       <img src="../_misc/image/break-03.png">
     </div>
-    <Clock
-      :style="{ 'left' : '24px',
-                'top' : '734px',
-                'width' : '624px',
-                'height' : '86px',
-                'margin' : '10px'}"
-    />
   </div>
 </template>
 
@@ -37,10 +30,6 @@ export default class extends Vue {
 
   incrementCount(): void {
     this.count += 1;
-  }
-
-  created(): void {
-    //setInterval(this.incrementCount, 1000);
   }
 
   @Watch('count')

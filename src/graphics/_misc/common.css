@@ -3,6 +3,7 @@ body {
   padding: 0;
   color: white;
   font-family: 'UD デジタル 教科書体 NK-B', 'メイリオ';
+  overflow: hidden;
 }
 
 .container {
