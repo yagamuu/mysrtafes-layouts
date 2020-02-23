@@ -11,48 +11,21 @@
                 'height' : '220px',
                 'margin' : '10px'}"
     />
-    <Playerdata
-      :style="{ 'left' : '54px',
-                'top' : '316px',
-                'width' : '336px',
-                'height' : '154px',
-                'margin' : '10px'}"
-    />
-    <Game
-      :style="{ 'left' : '0px',
-                'top' : '842px',
-                'width' : '1114px',
-                'height' : '130px',
-                'margin' : '10px'}"
-    />
-    <Category
-      :style="{ 'left' : '0px',
-                'top' : '998px',
-                'width' : '1114px',
-                'height' : '98px',
-                'margin' : '10px'}"
-    />
   </div>
 </template>
 
 <script lang="ts">
 /* eslint global-require: off */
+/* eslint max-len: off */
 import { Vue, Component } from 'vue-property-decorator';
-import Timer from '../_misc/components/Timer.vue';
-import Game from '../_misc/components/Game.vue';
-import Category from '../_misc/components/Category.vue';
-import Playerdata from '../_misc/components/PlayerData.vue';
+import Timer from '../_misc/components/sample/Timer.vue';
 
 @Component({
   components: {
     Timer,
-    Game,
-    Category,
-    Playerdata,
   },
 })
 export default class extends Vue {
-  text = 'Example';
   background = require('../_misc/image/16x9-1p-sample.png');
 }
 </script>

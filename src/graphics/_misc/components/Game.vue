@@ -23,7 +23,7 @@ export default class Game extends Vue {
   @State runDataActiveRun!: RunDataActiveRun;
 
   @Prop({ type: String, default: '3.5em' })
-  fontsize: string;
+  fontsize!: string;
 }
 </script>
 

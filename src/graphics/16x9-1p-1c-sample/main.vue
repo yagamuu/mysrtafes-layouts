@@ -37,8 +37,9 @@
 
 <script lang="ts">
 /* eslint global-require: off */
+/* eslint max-len: off */
 import { Vue, Component } from 'vue-property-decorator';
-import Timer from '../_misc/components/Timer.vue';
+import Timer from '../_misc/components/sample/Timer.vue';
 import Game from '../_misc/components/Game.vue';
 import Category from '../_misc/components/Category.vue';
 import Playerdata from '../_misc/components/PlayerData.vue';

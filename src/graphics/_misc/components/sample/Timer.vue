@@ -4,32 +4,38 @@
     :style="{ 'flex-direction' : 'column' }"
   >
     <div class="timerText">
-      <span
-        :class="timer.state"
-        :style="{ 'font-size' : fontsize }"
-      >{{ timer.time }}</span>
+      <span :class="timer.state">{{ timer.time }}</span>
+    </div>
+    <div
+      v-if="runDataActiveRun"
+      class="estText"
+    >
+      <span>予定タイム {{ runDataActiveRun.estimate }}</span>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 /* eslint global-require: off */
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator';
 import { State } from 'vuex-class';
-import { Timer as TimerType, RunDataActiveRun } from '../../../../../nodecg-speedcontrol/types';
+import { Timer as TimerType, RunDataActiveRun } from '../../../../../../nodecg-speedcontrol/types';
 
 @Component
 export default class Timer extends Vue {
   @State timer!: TimerType;
   @State runDataActiveRun!: RunDataActiveRun;
-
-  @Prop({ type: String, required: true, default: '5.0em' })
-  fontsize!: string;
 }
 </script>
 
 <style scoped>
     .timerText {
+        font-size: 8.0em;
+        text-align: center;
+    }
+
+    .estText {
+        font-size: 3em;
         text-align: center;
     }
 
