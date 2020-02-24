@@ -626,7 +626,7 @@ eval("module.exports = __webpack_require__.p + \"img/16x9-1p-sample-70ba1a6c3841
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/16x9-2p-01-88f210fd703196f6085d8e79e9b6fdc5.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-01.png?");
+eval("module.exports = __webpack_require__.p + \"img/16x9-2p-01-eeff27acb1de2b3efd7a6b23ec6141cc.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-01.png?");
 
 /***/ }),
 
