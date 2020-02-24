@@ -554,7 +554,7 @@ eval("module.exports = __webpack_require__.p + \"img/16x9-1p-sample-70ba1a6c3841
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/16x9-2p-01-e5bb2f38d0937d4855fd6c7b6931cc8a.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-01.png?");
+eval("module.exports = __webpack_require__.p + \"img/16x9-2p-01-88f210fd703196f6085d8e79e9b6fdc5.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-01.png?");
 
 /***/ }),
 
@@ -653,7 +653,7 @@ eval("module.exports = __webpack_require__.p + \"img/4x3-3p-02-d73fa4464deccccd9
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/4x3-3p-03-efca874db7bd4af21130b2cfc910d0c0.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-3p-03.png?");
+eval("module.exports = __webpack_require__.p + \"img/4x3-3p-03-4b00457bf77cb7c695f5ce5e257f3cae.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-3p-03.png?");
 
 /***/ }),
 
