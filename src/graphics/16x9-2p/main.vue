@@ -12,6 +12,22 @@
                 'margin' : '10px'}"
       fontsize="4.5em"
     />
+    <Teamtimer
+      :style="{ 'left' : '20px',
+                'top' : '628px',
+                'width' : '918px',
+                'height' : '26px',
+                'margin-left' : '10px'}"
+      teamid="0"
+    />
+    <Teamtimer
+      :style="{ 'left' : '964px',
+                'top' : '628px',
+                'width' : '918px',
+                'height' : '26px',
+                'margin-left' : '10px'}"
+      teamid="1"
+    />
   </div>
 </template>
 
@@ -21,11 +37,13 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { State } from 'vuex-class';
 import Timer from '../_misc/components/Timer.vue';
+import Teamtimer from '../_misc/components/TeamTimer.vue';
 import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
 @Component({
   components: {
     Timer,
+    Teamtimer,
   },
 })
 export default class extends Vue {

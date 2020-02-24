@@ -23,7 +23,7 @@ export default class Timer extends Vue {
   @State timer!: TimerType;
   @State runDataActiveRun!: RunDataActiveRun;
 
-  @Prop({ type: String, required: true, default: '5.0em' })
+  @Prop({ type: String, default: '5.0em' })
   fontsize!: string;
 }
 </script>
