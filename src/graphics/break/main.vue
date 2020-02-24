@@ -7,6 +7,13 @@
       <img src="../_misc/image/break-02.png">
       <img src="../_misc/image/break-03.png">
     </div>
+    <Nextgame
+      :style="{ 'left' : '1262px',
+                'top' : '794px',
+                'width' : '624px',
+                'height' : '86px',
+                'margin' : '10px'}"
+    />
   </div>
 </template>
 
@@ -15,12 +22,12 @@
 /* eslint max-len: off */
 import { Vue, Component, Watch } from 'vue-property-decorator';
 import { State } from 'vuex-class';
-import Clock from '../_misc/components/Clock.vue';
+import Nextgame from '../_misc/components/NextGame.vue';
 import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
 @Component({
   components: {
-    Clock,
+    Nextgame,
   },
 })
 export default class extends Vue {
