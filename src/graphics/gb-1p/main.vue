@@ -31,7 +31,14 @@ export default class extends Vue {
   @State runDataActiveRun!: RunDataActiveRun;
 
   get background(): string {
-    const fileName = this.runDataActiveRun && this.runDataActiveRun.customData.layoutImage ? this.runDataActiveRun.customData.layoutImage : '16x9-1p-sample.png';
+    let fileName = '';
+    if (this.runDataActiveRun && this.runDataActiveRun.customData.layoutImage) {
+      fileName = this.runDataActiveRun.customData.layoutImage;
+    } else if (this.runDataActiveRun && this.runDataActiveRun.customData.commentator) {
+      fileName = '10x9-1p-00.png';
+    } else {
+      fileName = '10x9-1p-00.png';
+    }
     // eslint-disable-next-line import/no-dynamic-require
     return require(`../_misc/image/${fileName}`);
   }

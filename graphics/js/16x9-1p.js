@@ -240,7 +240,7 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar tslib_1 = __webpack_require__(/*! tslib */ \"../../node_modules/tslib/tslib.es6.js\");\r\n/* eslint global-require: off */\r\n/* eslint max-len: off */\r\nvar vue_property_decorator_1 = __webpack_require__(/*! vue-property-decorator */ \"../../node_modules/vue-property-decorator/lib/vue-property-decorator.js\");\r\nvar vuex_class_1 = __webpack_require__(/*! vuex-class */ \"../../node_modules/vuex-class/lib/index.js\");\r\nvar Timer_vue_1 = tslib_1.__importDefault(__webpack_require__(/*! ../_misc/components/Timer.vue */ \"./_misc/components/Timer.vue\"));\r\nvar default_1 = /** @class */ (function (_super) {\r\n    tslib_1.__extends(default_1, _super);\r\n    function default_1() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Object.defineProperty(default_1.prototype, \"background\", {\r\n        get: function () {\r\n            var fileName = this.runDataActiveRun && this.runDataActiveRun.customData.layoutImage ? this.runDataActiveRun.customData.layoutImage : '16x9-1p-sample.png';\r\n            // eslint-disable-next-line import/no-dynamic-require\r\n            return __webpack_require__(\"./_misc/image sync recursive ^\\\\.\\\\/.*$\")(\"./\" + fileName);\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    tslib_1.__decorate([\r\n        vuex_class_1.State\r\n    ], default_1.prototype, \"runDataActiveRun\", void 0);\r\n    default_1 = tslib_1.__decorate([\r\n        vue_property_decorator_1.Component({\r\n            components: {\r\n                Timer: Timer_vue_1.default,\r\n            },\r\n        })\r\n    ], default_1);\r\n    return default_1;\r\n}(vue_property_decorator_1.Vue));\r\nexports.default = default_1;\r\n\n\n//# sourceURL=webpack:///./16x9-1p/main.vue?D:/My_Documents/Web/mysrtafes/bundles/mysrtafes-layouts/node_modules/ts-loader??ref--6!D:/My_Documents/Web/mysrtafes/bundles/mysrtafes-layouts/node_modules/vue-loader/lib??vue-loader-options");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar tslib_1 = __webpack_require__(/*! tslib */ \"../../node_modules/tslib/tslib.es6.js\");\r\n/* eslint global-require: off */\r\n/* eslint max-len: off */\r\nvar vue_property_decorator_1 = __webpack_require__(/*! vue-property-decorator */ \"../../node_modules/vue-property-decorator/lib/vue-property-decorator.js\");\r\nvar vuex_class_1 = __webpack_require__(/*! vuex-class */ \"../../node_modules/vuex-class/lib/index.js\");\r\nvar Timer_vue_1 = tslib_1.__importDefault(__webpack_require__(/*! ../_misc/components/Timer.vue */ \"./_misc/components/Timer.vue\"));\r\nvar default_1 = /** @class */ (function (_super) {\r\n    tslib_1.__extends(default_1, _super);\r\n    function default_1() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Object.defineProperty(default_1.prototype, \"background\", {\r\n        get: function () {\r\n            var fileName = '';\r\n            if (this.runDataActiveRun && this.runDataActiveRun.customData.layoutImage) {\r\n                fileName = this.runDataActiveRun.customData.layoutImage;\r\n            }\r\n            else if (this.runDataActiveRun && this.runDataActiveRun.customData.commentator) {\r\n                fileName = '16x9-1p-1c-00.png';\r\n            }\r\n            else {\r\n                fileName = '16x9-1p-00.png';\r\n            }\r\n            // eslint-disable-next-line import/no-dynamic-require\r\n            return __webpack_require__(\"./_misc/image sync recursive ^\\\\.\\\\/.*$\")(\"./\" + fileName);\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    tslib_1.__decorate([\r\n        vuex_class_1.State\r\n    ], default_1.prototype, \"runDataActiveRun\", void 0);\r\n    default_1 = tslib_1.__decorate([\r\n        vue_property_decorator_1.Component({\r\n            components: {\r\n                Timer: Timer_vue_1.default,\r\n            },\r\n        })\r\n    ], default_1);\r\n    return default_1;\r\n}(vue_property_decorator_1.Vue));\r\nexports.default = default_1;\r\n\n\n//# sourceURL=webpack:///./16x9-1p/main.vue?D:/My_Documents/Web/mysrtafes/bundles/mysrtafes-layouts/node_modules/ts-loader??ref--6!D:/My_Documents/Web/mysrtafes/bundles/mysrtafes-layouts/node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -560,7 +560,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./16x9-1p-01.png\": \"./_misc/image/16x9-1p-01.png\",\n\t\"./16x9-1p-02.png\": \"./_misc/image/16x9-1p-02.png\",\n\t\"./16x9-1p-03.png\": \"./_misc/image/16x9-1p-03.png\",\n\t\"./16x9-1p-1c-sample.png\": \"./_misc/image/16x9-1p-1c-sample.png\",\n\t\"./16x9-1p-sample.png\": \"./_misc/image/16x9-1p-sample.png\",\n\t\"./16x9-2p-01.png\": \"./_misc/image/16x9-2p-01.png\",\n\t\"./16x9-2p-02.png\": \"./_misc/image/16x9-2p-02.png\",\n\t\"./4x3-1p-01.png\": \"./_misc/image/4x3-1p-01.png\",\n\t\"./4x3-1p-02.png\": \"./_misc/image/4x3-1p-02.png\",\n\t\"./4x3-1p-03.png\": \"./_misc/image/4x3-1p-03.png\",\n\t\"./4x3-1p-04.png\": \"./_misc/image/4x3-1p-04.png\",\n\t\"./4x3-1p-1c-sample.png\": \"./_misc/image/4x3-1p-1c-sample.png\",\n\t\"./4x3-3p-01.png\": \"./_misc/image/4x3-3p-01.png\",\n\t\"./4x3-3p-02.png\": \"./_misc/image/4x3-3p-02.png\",\n\t\"./4x3-3p-03.png\": \"./_misc/image/4x3-3p-03.png\",\n\t\"./break-01.png\": \"./_misc/image/break-01.png\",\n\t\"./break-02.png\": \"./_misc/image/break-02.png\",\n\t\"./break-03.png\": \"./_misc/image/break-03.png\",\n\t\"./gb-1p-01.png\": \"./_misc/image/gb-1p-01.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./_misc/image sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack:///./_misc/image_sync_^\\.\\/.*$?");
+eval("var map = {\n\t\"./10x9-1p-00.png\": \"./_misc/image/10x9-1p-00.png\",\n\t\"./16x9-1p-00.png\": \"./_misc/image/16x9-1p-00.png\",\n\t\"./16x9-1p-01.png\": \"./_misc/image/16x9-1p-01.png\",\n\t\"./16x9-1p-02.png\": \"./_misc/image/16x9-1p-02.png\",\n\t\"./16x9-1p-03.png\": \"./_misc/image/16x9-1p-03.png\",\n\t\"./16x9-1p-1c-00.png\": \"./_misc/image/16x9-1p-1c-00.png\",\n\t\"./16x9-1p-1c-sample.png\": \"./_misc/image/16x9-1p-1c-sample.png\",\n\t\"./16x9-1p-sample.png\": \"./_misc/image/16x9-1p-sample.png\",\n\t\"./16x9-2p-00.png\": \"./_misc/image/16x9-2p-00.png\",\n\t\"./16x9-2p-01.png\": \"./_misc/image/16x9-2p-01.png\",\n\t\"./16x9-2p-02.png\": \"./_misc/image/16x9-2p-02.png\",\n\t\"./16x9-2p-1c-00.png\": \"./_misc/image/16x9-2p-1c-00.png\",\n\t\"./4x3-1p-00.png\": \"./_misc/image/4x3-1p-00.png\",\n\t\"./4x3-1p-01.png\": \"./_misc/image/4x3-1p-01.png\",\n\t\"./4x3-1p-02.png\": \"./_misc/image/4x3-1p-02.png\",\n\t\"./4x3-1p-03.png\": \"./_misc/image/4x3-1p-03.png\",\n\t\"./4x3-1p-04.png\": \"./_misc/image/4x3-1p-04.png\",\n\t\"./4x3-1p-1c-00.png\": \"./_misc/image/4x3-1p-1c-00.png\",\n\t\"./4x3-1p-1c-sample.png\": \"./_misc/image/4x3-1p-1c-sample.png\",\n\t\"./4x3-3p-00.png\": \"./_misc/image/4x3-3p-00.png\",\n\t\"./4x3-3p-01.png\": \"./_misc/image/4x3-3p-01.png\",\n\t\"./4x3-3p-02.png\": \"./_misc/image/4x3-3p-02.png\",\n\t\"./4x3-3p-03.png\": \"./_misc/image/4x3-3p-03.png\",\n\t\"./4x3-3p-1c-00.png\": \"./_misc/image/4x3-3p-1c-00.png\",\n\t\"./break-01.png\": \"./_misc/image/break-01.png\",\n\t\"./break-02.png\": \"./_misc/image/break-02.png\",\n\t\"./break-03.png\": \"./_misc/image/break-03.png\",\n\t\"./gb-1p-01.png\": \"./_misc/image/gb-1p-01.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./_misc/image sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack:///./_misc/image_sync_^\\.\\/.*$?");
+
+/***/ }),
+
+/***/ "./_misc/image/10x9-1p-00.png":
+/*!************************************!*\
+  !*** ./_misc/image/10x9-1p-00.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/10x9-1p-00-7c10f3f5880f849b2585c1b2f7fae53f.png\";\n\n//# sourceURL=webpack:///./_misc/image/10x9-1p-00.png?");
+
+/***/ }),
+
+/***/ "./_misc/image/16x9-1p-00.png":
+/*!************************************!*\
+  !*** ./_misc/image/16x9-1p-00.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/16x9-1p-00-7bc6dfc9343eb8a6a76a8a006db1f77c.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-1p-00.png?");
 
 /***/ }),
 
@@ -597,6 +619,17 @@ eval("module.exports = __webpack_require__.p + \"img/16x9-1p-03-d65f2933314a6428
 
 /***/ }),
 
+/***/ "./_misc/image/16x9-1p-1c-00.png":
+/*!***************************************!*\
+  !*** ./_misc/image/16x9-1p-1c-00.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/16x9-1p-1c-00-345863640588f283fc7003d853d276ae.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-1p-1c-00.png?");
+
+/***/ }),
+
 /***/ "./_misc/image/16x9-1p-1c-sample.png":
 /*!*******************************************!*\
   !*** ./_misc/image/16x9-1p-1c-sample.png ***!
@@ -619,6 +652,17 @@ eval("module.exports = __webpack_require__.p + \"img/16x9-1p-sample-70ba1a6c3841
 
 /***/ }),
 
+/***/ "./_misc/image/16x9-2p-00.png":
+/*!************************************!*\
+  !*** ./_misc/image/16x9-2p-00.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/16x9-2p-00-192e845274c14584689963502ff72917.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-00.png?");
+
+/***/ }),
+
 /***/ "./_misc/image/16x9-2p-01.png":
 /*!************************************!*\
   !*** ./_misc/image/16x9-2p-01.png ***!
@@ -638,6 +682,28 @@ eval("module.exports = __webpack_require__.p + \"img/16x9-2p-01-eeff27acb1de2b3e
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/16x9-2p-02-98b7d5f5f95904e9f3b96fc56fdf5ec6.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-02.png?");
+
+/***/ }),
+
+/***/ "./_misc/image/16x9-2p-1c-00.png":
+/*!***************************************!*\
+  !*** ./_misc/image/16x9-2p-1c-00.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/16x9-2p-1c-00-a80e662a0f5e12c3b1a1a8a868145f94.png\";\n\n//# sourceURL=webpack:///./_misc/image/16x9-2p-1c-00.png?");
+
+/***/ }),
+
+/***/ "./_misc/image/4x3-1p-00.png":
+/*!***********************************!*\
+  !*** ./_misc/image/4x3-1p-00.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/4x3-1p-00-ef61c427f2fa5b6d70ddb436875720de.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-1p-00.png?");
 
 /***/ }),
 
@@ -685,6 +751,17 @@ eval("module.exports = __webpack_require__.p + \"img/4x3-1p-04-ce36aff25782edf3a
 
 /***/ }),
 
+/***/ "./_misc/image/4x3-1p-1c-00.png":
+/*!**************************************!*\
+  !*** ./_misc/image/4x3-1p-1c-00.png ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/4x3-1p-1c-00-8040cc355cd395eae5a7b1bc73716dce.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-1p-1c-00.png?");
+
+/***/ }),
+
 /***/ "./_misc/image/4x3-1p-1c-sample.png":
 /*!******************************************!*\
   !*** ./_misc/image/4x3-1p-1c-sample.png ***!
@@ -693,6 +770,17 @@ eval("module.exports = __webpack_require__.p + \"img/4x3-1p-04-ce36aff25782edf3a
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/4x3-1p-1c-sample-7ec7b62e75d58b66b8689a952dbb3b0f.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-1p-1c-sample.png?");
+
+/***/ }),
+
+/***/ "./_misc/image/4x3-3p-00.png":
+/*!***********************************!*\
+  !*** ./_misc/image/4x3-3p-00.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/4x3-3p-00-7ee83b8a86ff362581ff63aa212a9558.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-3p-00.png?");
 
 /***/ }),
 
@@ -726,6 +814,17 @@ eval("module.exports = __webpack_require__.p + \"img/4x3-3p-02-d73fa4464deccccd9
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/4x3-3p-03-4b00457bf77cb7c695f5ce5e257f3cae.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-3p-03.png?");
+
+/***/ }),
+
+/***/ "./_misc/image/4x3-3p-1c-00.png":
+/*!**************************************!*\
+  !*** ./_misc/image/4x3-3p-1c-00.png ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/4x3-3p-1c-00-baf5021690abeed4e36f674d0c03755a.png\";\n\n//# sourceURL=webpack:///./_misc/image/4x3-3p-1c-00.png?");
 
 /***/ }),
 
