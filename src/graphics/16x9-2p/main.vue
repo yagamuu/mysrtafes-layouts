@@ -28,6 +28,40 @@
                 'margin-left' : '10px'}"
       teamid="1"
     />
+    <Playername
+      v-if="isCustomData"
+      :style="{ 'left' : '58px',
+                'top' : '556px',
+                'width' : '870px',
+                'height' : '78px',
+                'margin' : '10px'}"
+      :teamid="0"
+    />
+    <Playername
+      v-if="isCustomData"
+      :style="{ 'left' : '1002px',
+                'top' : '556px',
+                'width' : '870px',
+                'height' : '78px',
+                'margin' : '10px'}"
+      :teamid="1"
+    />
+    <Gamedata
+      v-if="isCustomData"
+      :style="{ 'left' : '28px',
+                'top' : '886px',
+                'width' : '1260px',
+                'height' : '146px',
+                'margin' : '10px'}"
+    />
+    <Estimate
+      v-if="isCustomData"
+      :style="{ 'left' : '1750px',
+                'top' : '890px',
+                'width' : '134px',
+                'height' : '40px',
+                'margin' : '5px'}"
+    />
   </div>
 </template>
 
@@ -38,12 +72,18 @@ import { Vue, Component } from 'vue-property-decorator';
 import { State } from 'vuex-class';
 import Timer from '../_misc/components/Timer.vue';
 import Teamtimer from '../_misc/components/TeamTimer.vue';
+import Gamedata from '../_misc/components/Gamedata.vue';
+import Playername from '../_misc/components/PlayerName.vue';
+import Estimate from '../_misc/components/Estimate.vue';
 import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
 @Component({
   components: {
     Timer,
     Teamtimer,
+    Gamedata,
+    Playername,
+    Estimate,
   },
 })
 export default class extends Vue {
@@ -60,6 +100,16 @@ export default class extends Vue {
     }
     // eslint-disable-next-line import/no-dynamic-require
     return require(`../_misc/image/${fileName}`);
+  }
+
+  get isCustomData(): boolean {
+    if (!this?.runDataActiveRun?.customData) {
+      return true;
+    }
+    if (!this?.runDataActiveRun?.customData?.layoutImage) {
+      return true;
+    }
+    return false;
   }
 }
 </script>

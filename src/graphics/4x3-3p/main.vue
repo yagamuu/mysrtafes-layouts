@@ -36,6 +36,50 @@
                 'margin-left' : '10px'}"
       teamid="2"
     />
+    <Playername
+      v-if="isCustomData"
+      :style="{ 'left' : '708px',
+                'top' : '24px',
+                'width' : '498px',
+                'height' : '80px',
+                'margin' : '10px'}"
+      :teamid="0"
+    />
+    <Playername
+      v-if="isCustomData"
+      :style="{ 'left' : '732px',
+                'top' : '408px',
+                'width' : '498px',
+                'height' : '80px',
+                'margin' : '10px'}"
+      :teamid="1"
+    />
+    <Playername
+      v-if="isCustomData"
+      :style="{ 'left' : '708px',
+                'top' : '574px',
+                'width' : '498px',
+                'height' : '80px',
+                'margin' : '10px'}"
+      :teamid="2"
+    />
+    <Gamedata
+      v-if="isCustomData"
+      :style="{ 'left' : '748px',
+                'top' : '764px',
+                'width' : '1090px',
+                'height' : '146px',
+                'margin' : '10px'}"
+      game-fontsize="2.5em"
+    />
+    <Estimate
+      v-if="isCustomData"
+      :style="{ 'left' : '1300px',
+                'top' : '1000px',
+                'width' : '134px',
+                'height' : '40px',
+                'margin' : '5px'}"
+    />
   </div>
 </template>
 
@@ -45,6 +89,9 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { State } from 'vuex-class';
 import Timer from '../_misc/components/Timer.vue';
+import Gamedata from '../_misc/components/Gamedata.vue';
+import Playername from '../_misc/components/PlayerName.vue';
+import Estimate from '../_misc/components/Estimate.vue';
 import Teamtimer from '../_misc/components/TeamTimer.vue';
 import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
@@ -52,6 +99,9 @@ import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
   components: {
     Timer,
     Teamtimer,
+    Gamedata,
+    Playername,
+    Estimate,
   },
 })
 export default class extends Vue {
@@ -68,6 +118,16 @@ export default class extends Vue {
     }
     // eslint-disable-next-line import/no-dynamic-require
     return require(`../_misc/image/${fileName}`);
+  }
+
+  get isCustomData(): boolean {
+    if (!this?.runDataActiveRun?.customData) {
+      return true;
+    }
+    if (!this?.runDataActiveRun?.customData?.layoutImage) {
+      return true;
+    }
+    return false;
   }
 }
 </script>

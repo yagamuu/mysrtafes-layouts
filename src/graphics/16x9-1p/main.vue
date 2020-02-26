@@ -12,6 +12,31 @@
                 'margin' : '10px'}"
       fontsize="4.5em"
     />
+    <Playername
+      v-if="isCustomData"
+      :style="{ 'left' : '62px',
+                'top' : '25px',
+                'width' : '340px',
+                'height' : '110px',
+                'margin' : '10px'}"
+      fontsize="2.5em"
+    />
+    <Gamedata
+      v-if="isCustomData"
+      :style="{ 'left' : '28px',
+                'top' : '880px',
+                'width' : '1260px',
+                'height' : '144px',
+                'margin' : '10px'}"
+    />
+    <Estimate
+      v-if="isCustomData"
+      :style="{ 'left' : '1750px',
+                'top' : '882px',
+                'width' : '134px',
+                'height' : '40px',
+                'margin' : '5px'}"
+    />
   </div>
 </template>
 
@@ -21,11 +46,17 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { State } from 'vuex-class';
 import Timer from '../_misc/components/Timer.vue';
+import Gamedata from '../_misc/components/Gamedata.vue';
+import Playername from '../_misc/components/PlayerName.vue';
+import Estimate from '../_misc/components/Estimate.vue';
 import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
 @Component({
   components: {
     Timer,
+    Gamedata,
+    Playername,
+    Estimate,
   },
 })
 export default class extends Vue {
@@ -42,6 +73,16 @@ export default class extends Vue {
     }
     // eslint-disable-next-line import/no-dynamic-require
     return require(`../_misc/image/${fileName}`);
+  }
+
+  get isCustomData(): boolean {
+    if (!this?.runDataActiveRun?.customData) {
+      return true;
+    }
+    if (!this?.runDataActiveRun?.customData?.layoutImage) {
+      return true;
+    }
+    return false;
   }
 }
 </script>

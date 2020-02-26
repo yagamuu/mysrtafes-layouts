@@ -11,7 +11,7 @@
                 'height' : '220px',
                 'margin' : '10px'}"
     />
-    <Playerdata
+    <Playername
       :style="{ 'left' : '54px',
                 'top' : '316px',
                 'width' : '336px',
@@ -42,14 +42,14 @@ import { Vue, Component } from 'vue-property-decorator';
 import Timer from '../_misc/components/sample/Timer.vue';
 import Game from '../_misc/components/Game.vue';
 import Category from '../_misc/components/Category.vue';
-import Playerdata from '../_misc/components/PlayerData.vue';
+import Playername from '../_misc/components/PlayerName.vue';
 
 @Component({
   components: {
     Timer,
     Game,
     Category,
-    Playerdata,
+    Playername,
   },
 })
 export default class extends Vue {

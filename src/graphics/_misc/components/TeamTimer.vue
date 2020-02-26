@@ -34,10 +34,12 @@ export default class Teamtimer extends Vue {
     if (!this.runDataActiveRun || this.runDataActiveRun.teams.length <= 1) {
       return undefined;
     }
-    const teamFinishTime = this.timer.teamFinishTimes[this.runDataActiveRun.teams[this.teamid].id];
+    // eslint-disable-next-line max-len
+    const refTeamId = Number(this.teamid);
+    const teamFinishTime = this.timer.teamFinishTimes[this.runDataActiveRun.teams[refTeamId].id];
     if (teamFinishTime) {
       if (teamFinishTime.state === 'completed') {
-        return this.timer.teamFinishTimes[this.runDataActiveRun.teams[this.teamid].id].time;
+        return this.timer.teamFinishTimes[this.runDataActiveRun.teams[refTeamId].id].time;
       }
       if (teamFinishTime.state === 'forfeit') {
         return 'リタイア';
