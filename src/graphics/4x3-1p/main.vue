@@ -35,6 +35,14 @@
                 'height' : '40px',
                 'margin' : '5px'}"
     />
+    <Commentator
+      v-if="isHasCustomCommentator"
+      :style="{ 'left' : '24px',
+                'top' : '424px',
+                'width' : '624px',
+                'height' : '80px',
+                'margin' : '10px'}"
+    />
   </div>
 </template>
 
@@ -46,6 +54,7 @@ import { State } from 'vuex-class';
 import Timer from '../_misc/components/Timer.vue';
 import Gamedata from '../_misc/components/Gamedata.vue';
 import Playername from '../_misc/components/PlayerName.vue';
+import Commentator from '../_misc/components/Commentator.vue';
 import Estimate from '../_misc/components/Estimate.vue';
 import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
 
@@ -55,6 +64,7 @@ import { RunDataActiveRun } from '../../../../nodecg-speedcontrol/types';
     Gamedata,
     Playername,
     Estimate,
+    Commentator,
   },
 })
 export default class extends Vue {
@@ -81,6 +91,10 @@ export default class extends Vue {
       return true;
     }
     return false;
+  }
+
+  get isHasCustomCommentator(): boolean {
+    return !!(this.isCustomData && this.runDataActiveRun.customData.commentator);
   }
 }
 </script>
