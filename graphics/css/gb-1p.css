@@ -1,0 +1,57 @@
+
+.timerText[data-v-ddc4efa2] {
+    text-align: center;
+}
+.stopped[data-v-ddc4efa2] {
+    color: #9a9fa1;
+}
+.running[data-v-ddc4efa2] {
+   color: #ffffff;
+}
+.paused[data-v-ddc4efa2] {
+    color: #dfb54f;
+}
+.finished[data-v-ddc4efa2] {
+    color: #ffff52;
+}
+
+
+.gameTitle[data-v-034a305d] {
+    font-size: 3em;
+    text-align: center;
+    margin: auto 0;
+    color: #000000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.subInfo[data-v-034a305d] {
+    font-size: 2em;
+    text-align: center;
+    margin: auto 0;
+    color: #000000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.playerName[data-v-401ed018] {
+  text-align: center;
+  margin: auto 0;
+  color: #000000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.estimate[data-v-9be0ea78] {
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto 0;
+    color: #000000;
+}
+
+
+

@@ -1,0 +1,24 @@
+
+.timerText[data-v-603be41c] {
+    font-size: 8.0em;
+    text-align: center;
+}
+.estText[data-v-603be41c] {
+    font-size: 3em;
+    text-align: center;
+}
+.stopped[data-v-603be41c] {
+    color: #9a9fa1;
+}
+.running[data-v-603be41c] {
+   color: #ffffff;
+}
+.paused[data-v-603be41c] {
+    color: #dfb54f;
+}
+.finished[data-v-603be41c] {
+    color: #ffff52;
+}
+
+
+
