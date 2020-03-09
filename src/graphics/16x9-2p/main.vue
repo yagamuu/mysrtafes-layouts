@@ -123,7 +123,7 @@ export default class extends Vue {
   }
 
   get isHasCustomCommentator(): boolean {
-    return !!(this.isCustomData && this.runDataActiveRun.customData.commentator);
+    return !!(this.runDataActiveRun?.customData?.commentator);
   }
 }
 </script>

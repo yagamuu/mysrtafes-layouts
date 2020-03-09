@@ -5,41 +5,39 @@
   >
     <div
       v-if="runDataActiveRun"
-      class="playerName"
+      class="commentatorName"
+      :style="{ 'font-size' : fontsize }"
     >
-      走者:{{ runDataActiveRun.teams[0].players[0].name }}
-    </div>
-    <div
-      v-if="runDataActiveRun.teams[0].players[0].social.twitch"
-      class="playerTwitch"
-    >
-      Twitch:{{ runDataActiveRun.teams[0].players[0].social.twitch }}
+      {{ runDataActiveRun.customData.commentator }}
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 import { State } from 'vuex-class';
 import { RunDataActiveRun } from '../../../../../nodecg-speedcontrol/types';
 
 @Component
-export default class Playerdata extends Vue {
+export default class Commentator extends Vue {
   @State runDataActiveRun!: RunDataActiveRun;
+
+  @Prop({ type: String, default: '4.0em' })
+  fontsize!: string;
+
+  @Prop({ type: Number, default: 0 })
+  teamid!: number;
 }
 </script>
 
 <style scoped>
-    .playerName {
-        font-size: 2em;
-        text-align: center;
-        margin: auto 0;
-    }
+    .commentatorName {
+      text-align: center;
+      margin: auto 0;
+      color: #000000;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
 
-    .playerTwitch {
-        margin-top: 10px;
-        text-align: center;
-        font-size: 2.0em;
-        margin: auto 0;
     }
 </style>
